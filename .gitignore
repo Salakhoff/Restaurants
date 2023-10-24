@@ -1,0 +1,25 @@
+# Xcode
+.DS_Store
+xcuserdata
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+*.xcshareddata
+*.xcuserstate
+
+# Swift
+*.swiftdoc
+*.swiftmodule
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Общее
+build/
+DerivedData/
+.vscode/
+.idea/
