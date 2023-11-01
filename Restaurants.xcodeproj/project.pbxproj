@@ -36,6 +36,14 @@
 		ED41F1692AF638FC00A787D6 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1682AF638FC00A787D6 /* UIView+ext.swift */; };
 		ED41F16C2AF63B8B00A787D6 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */; };
 		ED41F16E2AF63E3600A787D6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */; };
+		ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */; };
+		ED4229F02AFD9EDF00083244 /* SearchViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229EF2AFD9EDF00083244 /* SearchViewProtocols.swift */; };
+		ED4229F22AFDA18300083244 /* SearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */; };
+		ED4229F62AFDA41900083244 /* SearchViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229F52AFDA41900083244 /* SearchViewInteractor.swift */; };
+		ED4229F82AFDA42500083244 /* SearchViewInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229F72AFDA42500083244 /* SearchViewInteractorProtocols.swift */; };
+		ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4529C62AF15DCF00B4263A /* TopLabelView.swift */; };
+		ED5610A02AE8294600866B6C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56109F2AE8294600866B6C /* SearchViewController.swift */; };
+		ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,14 @@
 		ED41F1682AF638FC00A787D6 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewAssembly.swift; sourceTree = "<group>"; };
+		ED4229EF2AFD9EDF00083244 /* SearchViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewProtocols.swift; sourceTree = "<group>"; };
+		ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
+		ED4229F52AFDA41900083244 /* SearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractor.swift; sourceTree = "<group>"; };
+		ED4229F72AFDA42500083244 /* SearchViewInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractorProtocols.swift; sourceTree = "<group>"; };
+		ED4529C62AF15DCF00B4263A /* TopLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelView.swift; sourceTree = "<group>"; };
+		ED56109F2AE8294600866B6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +276,59 @@
 				ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
+		ED4229EC2AFC333900083244 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		ED4529C52AF15DB700B4263A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				ED4529C62AF15DCF00B4263A /* TopLabelView.swift */,
+				ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		ED5610992AE8289000866B6C /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				ED4229EC2AFC333900083244 /* Assembly */,
+				ED56109A2AE8289F00866B6C /* View */,
+				ED56109B2AE828A500866B6C /* Interactor */,
+				ED56109C2AE828B100866B6C /* Presenter */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		ED56109A2AE8289F00866B6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED56109F2AE8294600866B6C /* SearchViewController.swift */,
+				ED4229EF2AFD9EDF00083244 /* SearchViewProtocols.swift */,
+				ED4529C52AF15DB700B4263A /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED56109B2AE828A500866B6C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				ED4229F52AFDA41900083244 /* SearchViewInteractor.swift */,
+				ED4229F72AFDA42500083244 /* SearchViewInteractorProtocols.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		ED56109C2AE828B100866B6C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
