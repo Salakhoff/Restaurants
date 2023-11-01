@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  Restaurants
-//
-//  Created by Ильфат Салахов on 17.10.2023.
-//
 
 import UIKit
 
