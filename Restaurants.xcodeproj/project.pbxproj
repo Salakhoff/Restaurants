@@ -30,6 +30,8 @@
 		ED41F1652AF638C000A787D6 /* UIFont+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1642AF638C000A787D6 /* UIFont+ext.swift */; };
 		ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */; };
 		ED41F1692AF638FC00A787D6 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1682AF638FC00A787D6 /* UIView+ext.swift */; };
+		ED41F1692AF638FC00A787D6 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1682AF638FC00A787D6 /* UIView+ext.swift */; };
+		ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */; };
 		ED41F16C2AF63B8B00A787D6 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */; };
 		ED41F16E2AF63E3600A787D6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */; };
 		ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */; };
@@ -69,15 +71,17 @@
 		ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+ext.swift"; sourceTree = "<group>"; };
 		ED41F1682AF638FC00A787D6 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED41F1682AF638FC00A787D6 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewAssembly.swift; sourceTree = "<group>"; };
 		ED4229EF2AFD9EDF00083244 /* SearchViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewProtocols.swift; sourceTree = "<group>"; };
 		ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
-		ED4229F52AFDA41900083244 /* SearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractor.swift; sourceTree = "<group>"; };
 		ED4229F72AFDA42500083244 /* SearchViewInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractorProtocols.swift; sourceTree = "<group>"; };
+		ED4229F52AFDA41900083244 /* SearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractor.swift; sourceTree = "<group>"; };
 		ED4529C62AF15DCF00B4263A /* TopLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelView.swift; sourceTree = "<group>"; };
-		ED56109F2AE8294600866B6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		ED56109F2AE8294600866B6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +380,7 @@
 				ED41F1652AF638C000A787D6 /* UIFont+ext.swift in Sources */,
 				17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */,
 				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
+				ED41F1652AF638C000A787D6 /* UIFont+ext.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
@@ -387,6 +392,7 @@
 				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
 				ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */,
 				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
+				ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */,
 				173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */,
 				17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */,
 				ED41F1632AF6388C00A787D6 /* Array+ext.swift in Sources */,
