@@ -30,6 +30,12 @@
 		ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4529C62AF15DCF00B4263A /* TopLabelView.swift */; };
 		ED5610A02AE8294600866B6C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56109F2AE8294600866B6C /* SearchViewController.swift */; };
 		ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */; };
+		ED41F1632AF6388C00A787D6 /* Array+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1622AF6388C00A787D6 /* Array+ext.swift */; };
+		ED41F1652AF638C000A787D6 /* UIFont+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1642AF638C000A787D6 /* UIFont+ext.swift */; };
+		ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */; };
+		ED41F1692AF638FC00A787D6 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F1682AF638FC00A787D6 /* UIView+ext.swift */; };
+		ED41F16C2AF63B8B00A787D6 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */; };
+		ED41F16E2AF63E3600A787D6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,12 @@
 		ED4529C62AF15DCF00B4263A /* TopLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelView.swift; sourceTree = "<group>"; };
 		ED56109F2AE8294600866B6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		ED41F1622AF6388C00A787D6 /* Array+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ext.swift"; sourceTree = "<group>"; };
+		ED41F1642AF638C000A787D6 /* UIFont+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ext.swift"; sourceTree = "<group>"; };
+		ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+ext.swift"; sourceTree = "<group>"; };
+		ED41F1682AF638FC00A787D6 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
+		ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		1752F2F42AE7107F0072A114 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ED41F16A2AF63B7C00A787D6 /* Fonts */,
 				17ECF9602ADF1DB200943022 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -169,6 +182,7 @@
 				ED5610992AE8289000866B6C /* SearchModule */,
 				1752F2F32AE710720072A114 /* Application */,
 				17B151C12AE833780071C305 /* SettingsModule */,
+				ED41F1612AF6386000A787D6 /* Extensions */,
 				1752F2F42AE7107F0072A114 /* Resources */,
 				1752F2F52AE7108A0072A114 /* SupportingFiles */,
 			);
@@ -228,6 +242,24 @@
 				ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */,
 			);
 			path = Presenter;
+		ED41F1612AF6386000A787D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED41F1622AF6388C00A787D6 /* Array+ext.swift */,
+				ED41F1642AF638C000A787D6 /* UIFont+ext.swift */,
+				ED41F1662AF638DB00A787D6 /* UIStackView+ext.swift */,
+				ED41F1682AF638FC00A787D6 /* UIView+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED41F16A2AF63B7C00A787D6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED41F16B2AF63B8B00A787D6 /* Poppins-SemiBold.ttf */,
+				ED41F16D2AF63E3600A787D6 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED41F16E2AF63E3600A787D6 /* Roboto-Medium.ttf in Resources */,
+				ED41F16C2AF63B8B00A787D6 /* Poppins-SemiBold.ttf in Resources */,
 				17ECF9642ADF1DB200943022 /* LaunchScreen.storyboard in Resources */,
 				17ECF9612ADF1DB200943022 /* Assets.xcassets in Resources */,
 			);
@@ -311,6 +345,7 @@
 				ED4229F02AFD9EDF00083244 /* SearchViewProtocols.swift in Sources */,
 				ED4229F82AFDA42500083244 /* SearchViewInteractorProtocols.swift in Sources */,
 				17B151C92AE83DA10071C305 /* SettingsStackView.swift in Sources */,
+				ED41F1652AF638C000A787D6 /* UIFont+ext.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
@@ -318,7 +353,11 @@
 				17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */,
 				17C996C52AEEE36A00149D2C /* SettingsLanguagePickerView.swift in Sources */,
 				17B151CB2AE845160071C305 /* SettingsButton.swift in Sources */,
+				ED41F1692AF638FC00A787D6 /* UIView+ext.swift in Sources */,
+				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
+				ED41F1672AF638DB00A787D6 /* UIStackView+ext.swift in Sources */,
 				17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */,
+				ED41F1632AF6388C00A787D6 /* Array+ext.swift in Sources */,
 				17B151CE2AE8DD090071C305 /* SettingsPresenter.swift in Sources */,
 				17B151D42AE926080071C305 /* SettingsInteractor.swift in Sources */,
 			);
