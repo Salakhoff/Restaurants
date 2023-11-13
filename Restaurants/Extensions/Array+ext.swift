@@ -1,9 +1,3 @@
-//
-//  Array+ext.swift
-//  Restaurants
-//
-//  Created by Павел Дубинин on 04.11.2023.
-//
 
 import UIKit
 
