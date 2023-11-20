@@ -14,7 +14,6 @@ final class SettingsAssembly {
         view.output = presenter
         interactor.output = presenter
         
-        let navigationController = UINavigationController(rootViewController: view)
-        return navigationController
+        return view
     }
 }
