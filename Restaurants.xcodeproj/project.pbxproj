@@ -200,12 +200,9 @@
 		17ECF9562ADF1DB000943022 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
-				ED5AF5232B0C08AC00642224 /* Extensions */,
-				17A808C42B07315800BFF710 /* NavigationModule */,
-				ED5610992AE8289000866B6C /* SearchModule */,
 				1752F2F32AE710720072A114 /* Application */,
-				174F9F162B02A19800C945C0 /* TabBarModule */,
-				17B151C12AE833780071C305 /* SettingsModule */,
+				ED5AF52C2B0C0B7200642224 /* Modules */,
+				ED5AF5232B0C08AC00642224 /* Extensions */,
 				1752F2F42AE7107F0072A114 /* Resources */,
 				1752F2F52AE7108A0072A114 /* SupportingFiles */,
 			);
@@ -276,6 +273,17 @@
 				ED5AF52A2B0C093C00642224 /* UIFont+ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED5AF52C2B0C0B7200642224 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				174F9F162B02A19800C945C0 /* TabBarModule */,
+				17A808C42B07315800BFF710 /* NavigationModule */,
+				17B151C12AE833780071C305 /* SettingsModule */,
+				ED5610992AE8289000866B6C /* SearchModule */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
