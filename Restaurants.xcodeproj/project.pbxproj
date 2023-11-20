@@ -34,6 +34,10 @@
 		ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4529C62AF15DCF00B4263A /* TopLabelView.swift */; };
 		ED5610A02AE8294600866B6C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56109F2AE8294600866B6C /* SearchViewController.swift */; };
 		ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */; };
+		ED5AF5252B0C08C900642224 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AF5242B0C08C900642224 /* UIView+ext.swift */; };
+		ED5AF5272B0C08DE00642224 /* Array+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AF5262B0C08DE00642224 /* Array+ext.swift */; };
+		ED5AF5292B0C08FC00642224 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AF5282B0C08FC00642224 /* UIStackView+ext.swift */; };
+		ED5AF52B2B0C093C00642224 /* UIFont+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AF52A2B0C093C00642224 /* UIFont+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		ED4529C62AF15DCF00B4263A /* TopLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelView.swift; sourceTree = "<group>"; };
 		ED56109F2AE8294600866B6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED5AB8E52AF6CAD8002129B9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		ED5AF5242B0C08C900642224 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
+		ED5AF5262B0C08DE00642224 /* Array+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ext.swift"; sourceTree = "<group>"; };
+		ED5AF5282B0C08FC00642224 /* UIStackView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+ext.swift"; sourceTree = "<group>"; };
+		ED5AF52A2B0C093C00642224 /* UIFont+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +200,7 @@
 		17ECF9562ADF1DB000943022 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				ED5AF5232B0C08AC00642224 /* Extensions */,
 				17A808C42B07315800BFF710 /* NavigationModule */,
 				ED5610992AE8289000866B6C /* SearchModule */,
 				1752F2F32AE710720072A114 /* Application */,
@@ -256,6 +265,17 @@
 				ED4229F12AFDA18300083244 /* SearchViewPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ED5AF5232B0C08AC00642224 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED5AF5242B0C08C900642224 /* UIView+ext.swift */,
+				ED5AF5262B0C08DE00642224 /* Array+ext.swift */,
+				ED5AF5282B0C08FC00642224 /* UIStackView+ext.swift */,
+				ED5AF52A2B0C093C00642224 /* UIFont+ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +353,7 @@
 				ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */,
 				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
 				ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */,
+				ED5AF5292B0C08FC00642224 /* UIStackView+ext.swift in Sources */,
 				ED4229F22AFDA18300083244 /* SearchViewPresenter.swift in Sources */,
 				ED4229F62AFDA41900083244 /* SearchViewInteractor.swift in Sources */,
 				ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */,
@@ -343,6 +364,8 @@
 				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
+				ED5AF52B2B0C093C00642224 /* UIFont+ext.swift in Sources */,
+				ED5AF5252B0C08C900642224 /* UIView+ext.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
 				17C996C32AEEE36500149D2C /* SettingsCurrencyPickerView.swift in Sources */,
 				17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */,
@@ -352,6 +375,7 @@
 				173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */,
 				17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */,
 				17B151CE2AE8DD090071C305 /* SettingsPresenter.swift in Sources */,
+				ED5AF5272B0C08DE00642224 /* Array+ext.swift in Sources */,
 				17B151D42AE926080071C305 /* SettingsInteractor.swift in Sources */,
 				173E77022B05308000ABCE2F /* Tabs.swift in Sources */,
 			);
