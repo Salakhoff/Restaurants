@@ -113,6 +113,14 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		17A808C42B07315800BFF710 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				17A808C52B07325700BFF710 /* CustomNavigationController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
 		17B151C12AE833780071C305 /* SettingsModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +190,7 @@
 		17ECF9562ADF1DB000943022 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				17A808C42B07315800BFF710 /* NavigationModule */,
 				ED5610992AE8289000866B6C /* SearchModule */,
 				1752F2F32AE710720072A114 /* Application */,
 				174F9F162B02A19800C945C0 /* TabBarModule */,
@@ -317,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A808C62B07325700BFF710 /* CustomNavigationController.swift in Sources */,
 				ED5610A02AE8294600866B6C /* SearchViewController.swift in Sources */,
 				17ECF9582ADF1DB000943022 /* AppDelegate.swift in Sources */,
 				ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */,
