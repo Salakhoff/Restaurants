@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		173E77022B05308000ABCE2F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77012B05307F00ABCE2F /* Tabs.swift */; };
 		173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */; };
+		1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */; };
 		17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A808C72B07FE4400BFF710 /* TabProperty.swift */; };
 		17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B151C32AE8362B0071C305 /* SettingsView.swift */; };
 		17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B151C62AE8383B0071C305 /* SettingsTextField.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		173E77012B05307F00ABCE2F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		17A808C72B07FE4400BFF710 /* TabProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabProperty.swift; sourceTree = "<group>"; };
 		17B151C32AE8362B0071C305 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		17B151C62AE8383B0071C305 /* SettingsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTextField.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		17A808C42B07315800BFF710 /* NavigationModule */ = {
 			isa = PBXGroup;
 			children = (
-				17A808C52B07325700BFF710 /* CustomNavigationController.swift */,
+				1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */,
 			);
 			path = NavigationModule;
 			sourceTree = "<group>";
@@ -326,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A808C62B07325700BFF710 /* CustomNavigationController.swift in Sources */,
 				ED5610A02AE8294600866B6C /* SearchViewController.swift in Sources */,
 				17ECF9582ADF1DB000943022 /* AppDelegate.swift in Sources */,
 				ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */,
@@ -339,6 +340,7 @@
 				ED4229F82AFDA42500083244 /* SearchViewInteractorProtocols.swift in Sources */,
 				17B151C92AE83DA10071C305 /* SettingsStackView.swift in Sources */,
 				17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */,
+				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
