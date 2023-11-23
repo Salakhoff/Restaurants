@@ -26,7 +26,11 @@ final class TopLabelView: UIView {
 private extension TopLabelView {
     
     func embedViews() {
-        [image, textLabel].forEach { addSubview($0) }
+        let subviews = [image, textLabel]
+        
+        addSubviews(image, textLabel)
+        
+        subviews.removeConstraints()
     }
 }
 
@@ -35,8 +39,6 @@ private extension TopLabelView {
 private extension TopLabelView {
     
     func setupLayout() {
-        textLabel.translatesAutoresizingMaskIntoConstraints = false
-        
         NSLayoutConstraint.activate([
             image.topAnchor.constraint(equalTo: topAnchor),
             image.leadingAnchor.constraint(equalTo: leadingAnchor),

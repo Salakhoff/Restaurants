@@ -36,7 +36,5 @@ private extension SettingsTextField {
         layer.shadowRadius = 48
         layer.shadowOpacity = 0.2
         layer.masksToBounds = true
-        
-        translatesAutoresizingMaskIntoConstraints = false
     }
 }

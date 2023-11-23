@@ -8,11 +8,17 @@ final class SettingsView: UIViewController, SettingsViewInput {
     // MARK: Outlets
     private let currencyTextField = SettingsTextField()
     private let languageTextField = SettingsTextField()
-    private let stackView = SettingsStackView()
     private let saveButton = SettingsButton()
     private let settingsCurrencyPickerView = SettingsCurrencyPickerView()
     private let settingsLanguagePickerView = SettingsLanguagePickerView()
     private let tapGesture = UITapGestureRecognizer()
+    
+    private let stackView = UIStackView(
+        axis: .vertical,
+        distribution: .fillEqually,
+        alignment: .fill,
+        spacing: 35
+    )
     
     // MARK: LifeCycle
     override func viewDidLoad() {
@@ -87,11 +93,21 @@ extension SettingsView: SettingsLanguageDelegate {
 // MARK: - EmbedViews
 private extension SettingsView {
     func embedViews() {
-        view.addGestureRecognizer(tapGesture)
-        view.addSubview(stackView)
+        
+        let subviews = [
+            currencyTextField,
+            languageTextField,
+            stackView,
+            saveButton
+        ]
+        
+        subviews.removeConstraints()
+        
+        view.addSubviews(stackView, saveButton)
         stackView.addArrangedSubview(currencyTextField)
         stackView.addArrangedSubview(languageTextField)
-        view.addSubview(saveButton)
+        view.addGestureRecognizer(tapGesture)
+        
         currencyTextField.inputView = settingsCurrencyPickerView
         languageTextField.inputView = settingsLanguagePickerView
     }

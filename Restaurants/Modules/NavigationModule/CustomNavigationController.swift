@@ -12,10 +12,10 @@ private extension CustomNavigationController {
     
     func configureNavigationBar() {
         navigationBar.prefersLargeTitles = false
-        additionalSafeAreaInsets.top = 30
+        additionalSafeAreaInsets.top = 29
         
-        let textAttributes = [
-            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 29),
+        let textAttributes: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.font: UIFont.poppinsMedium(fontSize: 30) ?? UIFont.boldSystemFont(ofSize: 30),
             NSAttributedString.Key.foregroundColor: UIColor.tintColor
         ]
         
