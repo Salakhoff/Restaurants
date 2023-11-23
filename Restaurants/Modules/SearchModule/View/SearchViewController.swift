@@ -32,11 +32,11 @@ final class SearchViewController: UIViewController {
 private extension SearchViewController {
     
     func embedViews() {
-        let subviews =  [topLabel,searchField]
+        let subviews = [topLabel,searchField]
 
         view.addSubviews(topLabel, searchField)
     
-        subviews.removeConstraints()
+        subviews.disableAutoresizingMask()
     }
 }
 

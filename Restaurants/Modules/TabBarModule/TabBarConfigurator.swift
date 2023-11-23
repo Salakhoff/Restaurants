@@ -3,7 +3,7 @@ import UIKit
 final class TabBarConfigurator {
     
     func configure() -> UITabBarController {
-        return tabBarController
+        tabBarController
     }
 }
 
@@ -19,8 +19,8 @@ private extension TabBarConfigurator {
         
         if let items = controller.tabBar.items {
             for item in items {
-                let attributes: [NSAttributedString.Key: Any] = [
-                    NSAttributedString.Key.font: UIFont.robotoMedium(fontSize: 12) ?? .systemFont(ofSize: 12),
+                let attributes = [
+                    NSAttributedString.Key.font: UIFont.robotoMedium(fontSize: 12)!
                 ]
                 item.setTitleTextAttributes(attributes, for: .normal)
             }
@@ -52,12 +52,12 @@ private extension TabBarConfigurator {
     func makeViewController(of tab: Tabs) -> UIViewController {
         switch tab {
         case .search:
-            return SearchViewAssembly.build()
+            SearchViewAssembly.build()
         case .saved:
             // TODO: Тут установить SavedModule
-            return UIViewController()
+            UIViewController()
         case .settings:
-            return SettingsAssembly.build()
+            SettingsAssembly.build()
         }
     }
 }

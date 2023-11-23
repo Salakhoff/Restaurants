@@ -14,8 +14,8 @@ private extension CustomNavigationController {
         navigationBar.prefersLargeTitles = false
         additionalSafeAreaInsets.top = 29
         
-        let textAttributes: [NSAttributedString.Key : Any] = [
-            NSAttributedString.Key.font: UIFont.poppinsMedium(fontSize: 30) ?? UIFont.boldSystemFont(ofSize: 30),
+        let textAttributes = [
+            NSAttributedString.Key.font: UIFont.poppinsMedium(fontSize: 30)!,
             NSAttributedString.Key.foregroundColor: UIColor.tintColor
         ]
         

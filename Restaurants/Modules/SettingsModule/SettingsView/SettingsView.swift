@@ -101,7 +101,7 @@ private extension SettingsView {
             saveButton
         ]
         
-        subviews.removeConstraints()
+        subviews.disableAutoresizingMask()
         
         view.addSubviews(stackView, saveButton)
         stackView.addArrangedSubview(currencyTextField)
@@ -136,9 +136,7 @@ private extension SettingsView {
 private extension SettingsView {
     func setupAppearance() {
         title = "Settings"
-        
-        // FIXME: Установить корректный цвет экрана
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .white
     }
 }
 
