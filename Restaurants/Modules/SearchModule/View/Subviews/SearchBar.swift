@@ -38,7 +38,7 @@ private extension SearchBar {
             string: "Search for Restaurants by Location",
             attributes: [
                 .foregroundColor: UIColor.gray,
-                .font: UIFont.systemFont(ofSize: 12)
+                .font: UIFont.interMedium(fontSize: 12)!
             ])
         self.autocorrectionType = .no
         let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 65, height: 60))

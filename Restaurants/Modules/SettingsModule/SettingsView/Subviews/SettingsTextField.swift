@@ -14,15 +14,15 @@ final class SettingsTextField: UITextField {
     
     // MARK: Override methods
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: 20, dy: 0)
+        bounds.insetBy(dx: 20, dy: 0)
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: 20, dy: 0)
+        bounds.insetBy(dx: 20, dy: 0)
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: 20, dy: 0)
+        bounds.insetBy(dx: 20, dy: 0)
     }
 }
 
@@ -36,7 +36,5 @@ private extension SettingsTextField {
         layer.shadowRadius = 48
         layer.shadowOpacity = 0.2
         layer.masksToBounds = true
-        
-        translatesAutoresizingMaskIntoConstraints = false
     }
 }

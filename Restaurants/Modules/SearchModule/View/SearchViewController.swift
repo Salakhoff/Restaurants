@@ -32,13 +32,11 @@ final class SearchViewController: UIViewController {
 private extension SearchViewController {
     
     func embedViews() {
-        [
-            topLabel,
-            searchField,
-        ].forEach { view.addSubview($0) }
-        //FIXME: переделать после добавления расширений
-        topLabel.translatesAutoresizingMaskIntoConstraints = false
-        searchField.translatesAutoresizingMaskIntoConstraints = false
+        let subviews = [topLabel,searchField]
+
+        view.addSubviews(topLabel, searchField)
+    
+        subviews.disableAutoresizingMask()
     }
 }
 
@@ -77,6 +75,7 @@ private extension SearchViewController {
     func setupAppearance() {
         view.backgroundColor = .white
         title = "Welcome!"
+        tabBarItem.title = "Search"
     }
 }
 

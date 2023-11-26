@@ -3,7 +3,7 @@ import UIKit
 final class TabBarConfigurator {
     
     func configure() -> UITabBarController {
-        return tabBarController
+        tabBarController
     }
 }
 
@@ -12,10 +12,20 @@ private extension TabBarConfigurator {
     // MARK: - Tab Bar Controller
     var tabBarController: UITabBarController {
         let controller = UITabBarController()
-        controller.tabBar.tintColor =  .blue
+        controller.tabBar.tintColor = .tintColor
         controller.tabBar.unselectedItemTintColor = .lightGray
         controller.tabBar.backgroundColor = .white
         controller.viewControllers = viewControllers
+        
+        if let items = controller.tabBar.items {
+            for item in items {
+                let attributes = [
+                    NSAttributedString.Key.font: UIFont.robotoMedium(fontSize: 12)!
+                ]
+                item.setTitleTextAttributes(attributes, for: .normal)
+            }
+        }
+        
         return controller
     }
     
@@ -25,8 +35,7 @@ private extension TabBarConfigurator {
         
         Tabs.allCases.forEach { tab in
             let controller = makeViewController(of: tab)
-            // FIXME: Установить свой кастомный NC
-            let navigationView = UINavigationController(rootViewController: controller)
+            let navigationView = CustomNavigationController(rootViewController: controller)
             let tabBarItem = UITabBarItem(
                 title: tab.property.title,
                 image: tab.property.image,
@@ -43,13 +52,12 @@ private extension TabBarConfigurator {
     func makeViewController(of tab: Tabs) -> UIViewController {
         switch tab {
         case .search:
-            // TODO: Тут установить SearchModule
-            return UIViewController()
+            SearchViewAssembly.build()
         case .saved:
             // TODO: Тут установить SavedModule
-            return UIViewController()
+            UIViewController()
         case .settings:
-            return SettingsAssembly.build()
+            SettingsAssembly.build()
         }
     }
 }

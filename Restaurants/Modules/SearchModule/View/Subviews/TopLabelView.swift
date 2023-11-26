@@ -26,7 +26,11 @@ final class TopLabelView: UIView {
 private extension TopLabelView {
     
     func embedViews() {
-        [image, textLabel].forEach { addSubview($0) }
+        let subviews = [image, textLabel]
+        
+        addSubviews(image, textLabel)
+        
+        subviews.disableAutoresizingMask()
     }
 }
 
@@ -35,8 +39,6 @@ private extension TopLabelView {
 private extension TopLabelView {
     
     func setupLayout() {
-        textLabel.translatesAutoresizingMaskIntoConstraints = false
-        
         NSLayoutConstraint.activate([
             image.topAnchor.constraint(equalTo: topAnchor),
             image.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -60,7 +62,7 @@ private extension TopLabelView {
         ))
         
         textLabel.text = Constants.Strings.titleText
-        textLabel.font = Constants.Fonts.titleTextFontLabel
+        textLabel.font = UIFont.interSemiBold(fontSize: 24)
         textLabel.textColor = UIColor(cgColor: Constants.Colors.titleTextColor)
         textLabel.textAlignment = .center
         textLabel.numberOfLines = 0
@@ -84,13 +86,6 @@ private extension TopLabelView {
                 blue: 0.81,
                 alpha: 1
             )
-        }
-        
-        enum Fonts {
-            static let titleTextFontLabel: UIFont = UIFont(
-                name: "Inter-SemiBold",
-                size: 24)
-            ?? .boldSystemFont(ofSize: 24)
         }
         
         enum Metric {

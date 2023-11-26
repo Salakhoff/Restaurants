@@ -3,8 +3,8 @@ import UIKit
 
 extension Array {
     
-    func removeConstraints() {
-        self.forEach {
+    func disableAutoresizingMask() {
+        forEach {
             ($0 as? UIView)?.translatesAutoresizingMaskIntoConstraints = false
         }
     }
