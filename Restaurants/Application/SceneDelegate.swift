@@ -13,20 +13,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let searchViewController = SearchViewAssembly.build()
-        let navigationController = UINavigationController(rootViewController: searchViewController)
-        navigationController.navigationBar.prefersLargeTitles = false
-        navigationController.additionalSafeAreaInsets.top = 30
-        // FIXME: Изменить цвет и шрифт
-        let textAttributes = [
-           NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 29),
-           NSAttributedString.Key.foregroundColor: UIColor.tintColor
-        ]
-        navigationController.navigationBar.titleTextAttributes = textAttributes
-        
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+        window?.rootViewController = TabBarConfigurator().configure()
         window?.overrideUserInterfaceStyle = .unspecified
+        window?.makeKeyAndVisible()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
