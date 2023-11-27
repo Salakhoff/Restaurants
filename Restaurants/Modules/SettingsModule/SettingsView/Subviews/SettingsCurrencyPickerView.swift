@@ -7,10 +7,12 @@ protocol SettingsCurrencyDelegate: AnyObject {
 final class SettingsCurrencyPickerView: UIPickerView {
     
     // MARK: Properties
+    
     weak var settingsCurrencyDelegate: SettingsCurrencyDelegate?
     private var data: [String] = []
     
     // MARK: Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupBehaviour()
@@ -20,7 +22,8 @@ final class SettingsCurrencyPickerView: UIPickerView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Methods
+    // MARK: - Configuration
+    
     func configure(with data: [String]) {
         self.data = data
         self.reloadAllComponents()
@@ -28,6 +31,7 @@ final class SettingsCurrencyPickerView: UIPickerView {
 }
 
 // MARK: - SetupBehaviour
+
 private extension SettingsCurrencyPickerView {
     func setupBehaviour() {
         delegate = self
@@ -36,6 +40,7 @@ private extension SettingsCurrencyPickerView {
 }
 
 // MARK: - UIPickerViewDelegate
+
 extension SettingsCurrencyPickerView: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         data[row]
@@ -47,6 +52,7 @@ extension SettingsCurrencyPickerView: UIPickerViewDelegate {
 }
 
 // MARK: - UIPickerViewDataSource
+
 extension SettingsCurrencyPickerView: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1

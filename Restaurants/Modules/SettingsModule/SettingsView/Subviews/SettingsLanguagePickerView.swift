@@ -7,10 +7,12 @@ protocol SettingsLanguageDelegate: AnyObject {
 final class SettingsLanguagePickerView: UIPickerView {
     
     // MARK: Properties
+    
     weak var settingsLanguageDelegate: SettingsLanguageDelegate?
     private var data: [String] = []
     
     // MARK: Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupBehaviour()
@@ -20,7 +22,8 @@ final class SettingsLanguagePickerView: UIPickerView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Methods
+    // MARK: - Configuration
+    
     func configure(with data: [String]) {
         self.data = data
         self.reloadAllComponents()
@@ -28,6 +31,7 @@ final class SettingsLanguagePickerView: UIPickerView {
 }
 
 // MARK: - SetupBehaviour
+
 private extension SettingsLanguagePickerView {
     func setupBehaviour() {
         delegate = self
@@ -37,6 +41,7 @@ private extension SettingsLanguagePickerView {
 
 
 // MARK: - UIPickerViewDelegate
+
 extension SettingsLanguagePickerView: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         data[row]
@@ -49,6 +54,7 @@ extension SettingsLanguagePickerView: UIPickerViewDelegate {
 }
 
 // MARK: - UIPickerViewDataSource
+
 extension SettingsLanguagePickerView: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1

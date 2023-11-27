@@ -13,7 +13,7 @@ final class SearchBar: UISearchTextField {
     
     weak var searchBarDelegate: SearchBarDelegate?
     
-    //MARK: Init
+    // MARK: Init
     
     override init(frame: CGRect) {
         super.init(frame: frame)

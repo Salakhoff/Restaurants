@@ -3,9 +3,11 @@ import UIKit
 final class SettingsView: UIViewController, SettingsViewInput {
     
     // MARK: Properties:
+    
     var output: SettingsViewOutput?
     
     // MARK: Outlets
+    
     private let currencyTextField = SettingsTextField()
     private let languageTextField = SettingsTextField()
     private let saveButton = SettingsButton()
@@ -32,11 +34,13 @@ final class SettingsView: UIViewController, SettingsViewInput {
     }
     
     // MARK: Actions
+    
     @objc private func handleTap() {
         view.endEditing(true)
     }
     
-    // MARK: Methods
+    // MARK: - Picker Configuration
+    
     func configureCurrencyPickerView(with data: [String]) {
         settingsCurrencyPickerView.configure(with: data)
     }
@@ -47,6 +51,7 @@ final class SettingsView: UIViewController, SettingsViewInput {
 }
 
 // MARK: - UITextFieldDelegate
+
 extension SettingsView: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         switch textField {
@@ -60,6 +65,7 @@ extension SettingsView: UITextFieldDelegate {
 }
 
 // MARK: - Targets
+
 extension SettingsView {
     private func addTarget() {
         tapGesture.addTarget(self, action: #selector(handleTap))
@@ -67,6 +73,7 @@ extension SettingsView {
 }
 
 // MARK: - SetupBehaviour
+
 private extension SettingsView {
     func setupBehaviour() {
         currencyTextField.delegate = self
@@ -77,6 +84,7 @@ private extension SettingsView {
 }
 
 // MARK: - SettingsCurrencyDelegate
+
 extension SettingsView: SettingsCurrencyDelegate {
     func set(currency: String) {
         currencyTextField.text = currency
@@ -84,6 +92,7 @@ extension SettingsView: SettingsCurrencyDelegate {
 }
 
 // MARK: - SettingsLanguageDelegate
+
 extension SettingsView: SettingsLanguageDelegate {
     func set(language: String) {
         languageTextField.text = language
@@ -91,6 +100,7 @@ extension SettingsView: SettingsLanguageDelegate {
 }
 
 // MARK: - EmbedViews
+
 private extension SettingsView {
     func embedViews() {
         
@@ -114,6 +124,7 @@ private extension SettingsView {
 }
 
 // MARK: - SetupLayout
+
 private extension SettingsView {
     func setupLayout() {
         NSLayoutConstraint.activate([
@@ -133,6 +144,7 @@ private extension SettingsView {
 }
 
 // MARK: - SetupAppearance
+
 private extension SettingsView {
     func setupAppearance() {
         title = "Settings"
@@ -141,6 +153,7 @@ private extension SettingsView {
 }
 
 // MARK: - SetupText
+
 private extension SettingsView {
     func setupText() {
         currencyTextField.text = "USD"

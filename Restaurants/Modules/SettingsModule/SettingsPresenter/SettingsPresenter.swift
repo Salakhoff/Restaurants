@@ -3,10 +3,12 @@ import Foundation
 final class SettingsPresenter {
     
     // MARK: Properties
+    
     weak var view: SettingsViewInput?
     let interactor: SettingsInteractorInput
     
     // MARK: Init
+    
     init(view: SettingsViewInput, interactor: SettingsInteractorInput) {
         self.view = view
         self.interactor = interactor
@@ -14,6 +16,7 @@ final class SettingsPresenter {
 }
 
 // MARK: - SettingsViewOutput
+
 extension SettingsPresenter: SettingsViewOutput {
     func didTapCurrencyTextField() {
         view?.configureCurrencyPickerView(with: interactor.getCurrencyData())
@@ -25,4 +28,5 @@ extension SettingsPresenter: SettingsViewOutput {
 }
 
 // MARK: - SettingsInteractorOutput
+
 extension SettingsPresenter: SettingsInteractorOutput {}
