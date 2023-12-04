@@ -4,6 +4,7 @@ import UIKit
 extension UIFont {
     
     // MARK: Inter
+    
     static func interBlack(fontSize: CGFloat) -> UIFont! {
         UIFont(name: "Inter-Black", size: fontSize)
     }
@@ -41,6 +42,7 @@ extension UIFont {
     }
     
     // MARK: Roboto
+    
     static func robotoMedium(fontSize: CGFloat) -> UIFont! {
         UIFont(name: "Roboto-Medium", size: fontSize)
     }
@@ -90,6 +92,7 @@ extension UIFont {
     }
     
     // MARK: Poppins
+    
     static func poppinsExtraLight(fontSize: CGFloat) -> UIFont! {
         UIFont(name: "Poppins-ExtraLight", size: fontSize)
     }

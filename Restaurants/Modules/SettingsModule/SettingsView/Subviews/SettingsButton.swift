@@ -3,6 +3,7 @@ import UIKit
 final class SettingsButton: UIButton {
     
     // MARK: Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -18,26 +19,21 @@ final class SettingsButton: UIButton {
 }
 
 // MARK: - SetupAppearance
+
 private extension SettingsButton {
     func setupAppearance() {
         setTitleColor(.systemBackground, for: .normal)
         setTitle("Save", for: .normal)
         titleLabel?.font = UIFont.poppinsBold(fontSize: 20)
-        backgroundColor = Metric.buttonBackgroundColor
-        layer.cornerRadius = 10
-        
-        makeButtonShadow()
-    }
-}
-
-// MARK: - Metric
-private extension SettingsButton {
-    enum Metric {
-        static let buttonBackgroundColor: UIColor = UIColor(
+        backgroundColor = UIColor(
             red: 31/255.0,
             green: 65/255.0,
             blue: 187/255.0,
             alpha: 1.0
         )
+        
+        layer.cornerRadius = 10
+        
+        makeButtonShadow()
     }
 }

@@ -3,6 +3,7 @@ import UIKit
 final class SettingsTextField: UITextField {
     
     // MARK: Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupAppearance()
@@ -13,6 +14,7 @@ final class SettingsTextField: UITextField {
     }
     
     // MARK: Override methods
+    
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         bounds.insetBy(dx: 20, dy: 0)
     }
@@ -27,6 +29,7 @@ final class SettingsTextField: UITextField {
 }
 
 // MARK: - SetupAppearance
+
 private extension SettingsTextField {
     func setupAppearance() {
         borderStyle = .roundedRect

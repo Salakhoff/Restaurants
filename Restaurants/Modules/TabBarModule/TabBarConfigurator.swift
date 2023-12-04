@@ -10,6 +10,7 @@ final class TabBarConfigurator {
 private extension TabBarConfigurator {
     
     // MARK: - Tab Bar Controller
+    
     var tabBarController: UITabBarController {
         let controller = UITabBarController()
         controller.tabBar.tintColor = .tintColor
@@ -30,6 +31,7 @@ private extension TabBarConfigurator {
     }
     
     // MARK: - View Controllers
+    
     var viewControllers: [UIViewController] {
         var viewControllers = [UIViewController]()
         
@@ -49,13 +51,13 @@ private extension TabBarConfigurator {
     }
     
     // MARK: - Helper Methods
+    
     func makeViewController(of tab: Tabs) -> UIViewController {
         switch tab {
         case .search:
             SearchViewAssembly.build()
         case .saved:
-            // TODO: Тут установить SavedModule
-            UIViewController()
+            FavoritesAssembly.build()
         case .settings:
             SettingsAssembly.build()
         }

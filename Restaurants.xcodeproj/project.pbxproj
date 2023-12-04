@@ -56,13 +56,22 @@
 		17C70E8A2B0F69750045CC24 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C70E632B0F69750045CC24 /* Poppins-SemiBold.ttf */; };
 		17C70E8B2B0F69750045CC24 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C70E642B0F69750045CC24 /* Poppins-Italic.ttf */; };
 		17C70E8C2B0F69750045CC24 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C70E652B0F69750045CC24 /* Poppins-MediumItalic.ttf */; };
+		17C70ED12B1520150045CC24 /* FavoritesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70ED02B1520150045CC24 /* FavoritesAssembly.swift */; };
+		17C70EDD2B1524A10045CC24 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EDC2B1524A10045CC24 /* FavoritesView.swift */; };
+		17C70EDF2B1524C20045CC24 /* RestautantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EDE2B1524C20045CC24 /* RestautantCell.swift */; };
+		17C70EE12B1524D60045CC24 /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EE02B1524D60045CC24 /* CellIdentifiers.swift */; };
+		17C70EE42B15B80E0045CC24 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EE32B15B80E0045CC24 /* FavoritesPresenter.swift */; };
+		17C70EE72B15BA3A0045CC24 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EE62B15BA3A0045CC24 /* FavoritesInteractor.swift */; };
+		17C70EEA2B15F76B0045CC24 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EE92B15F76B0045CC24 /* Restaurant.swift */; };
+		17C70EEC2B19A2800045CC24 /* FavoritesViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EEB2B19A2800045CC24 /* FavoritesViewProtocols.swift */; };
+		17C70EEE2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C70EED2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift */; };
+		17C70EF02B19A9230045CC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C70EEF2B19A9230045CC24 /* Assets.xcassets */; };
 		17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C02AEEE34900149D2C /* SettingsViewProtocol.swift */; };
 		17C996C32AEEE36500149D2C /* SettingsCurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C22AEEE36500149D2C /* SettingsCurrencyPickerView.swift */; };
 		17C996C52AEEE36A00149D2C /* SettingsLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C42AEEE36A00149D2C /* SettingsLanguagePickerView.swift */; };
 		17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C62AEEE3C400149D2C /* SettingsInteractorProtocol.swift */; };
 		17ECF9582ADF1DB000943022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ECF9572ADF1DB000943022 /* AppDelegate.swift */; };
 		17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ECF9592ADF1DB000943022 /* SceneDelegate.swift */; };
-		17ECF9612ADF1DB200943022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ECF9602ADF1DB200943022 /* Assets.xcassets */; };
 		17ECF9642ADF1DB200943022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ECF9622ADF1DB200943022 /* LaunchScreen.storyboard */; };
 		ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */; };
 		ED4229F02AFD9EDF00083244 /* SearchViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4229EF2AFD9EDF00083244 /* SearchViewProtocols.swift */; };
@@ -128,6 +137,16 @@
 		17C70E632B0F69750045CC24 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		17C70E642B0F69750045CC24 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		17C70E652B0F69750045CC24 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		17C70ED02B1520150045CC24 /* FavoritesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesAssembly.swift; sourceTree = "<group>"; };
+		17C70EDC2B1524A10045CC24 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		17C70EDE2B1524C20045CC24 /* RestautantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestautantCell.swift; sourceTree = "<group>"; };
+		17C70EE02B1524D60045CC24 /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
+		17C70EE32B15B80E0045CC24 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		17C70EE62B15BA3A0045CC24 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
+		17C70EE92B15F76B0045CC24 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		17C70EEB2B19A2800045CC24 /* FavoritesViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewProtocols.swift; sourceTree = "<group>"; };
+		17C70EED2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractorProtocols.swift; sourceTree = "<group>"; };
+		17C70EEF2B19A9230045CC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C996C02AEEE34900149D2C /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
 		17C996C22AEEE36500149D2C /* SettingsCurrencyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCurrencyPickerView.swift; sourceTree = "<group>"; };
 		17C996C42AEEE36A00149D2C /* SettingsLanguagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLanguagePickerView.swift; sourceTree = "<group>"; };
@@ -135,7 +154,6 @@
 		17ECF9542ADF1DB000943022 /* Restaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ECF9572ADF1DB000943022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17ECF9592ADF1DB000943022 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17ECF9602ADF1DB200943022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ECF9632ADF1DB200943022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ECF9652ADF1DB200943022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4229ED2AFC335D00083244 /* SearchViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewAssembly.swift; sourceTree = "<group>"; };
@@ -185,7 +203,7 @@
 		1752F2F42AE7107F0072A114 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				17ECF9602ADF1DB200943022 /* Assets.xcassets */,
+				17C70EEF2B19A9230045CC24 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -326,6 +344,54 @@
 			path = Poppins;
 			sourceTree = "<group>";
 		};
+		17C70EC32B146C180045CC24 /* FavoritesModule */ = {
+			isa = PBXGroup;
+			children = (
+				17C70ED02B1520150045CC24 /* FavoritesAssembly.swift */,
+				17C70EDB2B1524850045CC24 /* FavoritesView */,
+				17C70EE52B15BA240045CC24 /* FavoritesInteractor */,
+				17C70EE22B15B7F40045CC24 /* FavoritesPresenter */,
+				17C70EE82B15F7220045CC24 /* FavoritesEntity */,
+			);
+			path = FavoritesModule;
+			sourceTree = "<group>";
+		};
+		17C70EDB2B1524850045CC24 /* FavoritesView */ = {
+			isa = PBXGroup;
+			children = (
+				17C70EDC2B1524A10045CC24 /* FavoritesView.swift */,
+				17C70EDE2B1524C20045CC24 /* RestautantCell.swift */,
+				17C70EE02B1524D60045CC24 /* CellIdentifiers.swift */,
+				17C70EEB2B19A2800045CC24 /* FavoritesViewProtocols.swift */,
+			);
+			path = FavoritesView;
+			sourceTree = "<group>";
+		};
+		17C70EE22B15B7F40045CC24 /* FavoritesPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				17C70EE32B15B80E0045CC24 /* FavoritesPresenter.swift */,
+			);
+			path = FavoritesPresenter;
+			sourceTree = "<group>";
+		};
+		17C70EE52B15BA240045CC24 /* FavoritesInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				17C70EE62B15BA3A0045CC24 /* FavoritesInteractor.swift */,
+				17C70EED2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift */,
+			);
+			path = FavoritesInteractor;
+			sourceTree = "<group>";
+		};
+		17C70EE82B15F7220045CC24 /* FavoritesEntity */ = {
+			isa = PBXGroup;
+			children = (
+				17C70EE92B15F76B0045CC24 /* Restaurant.swift */,
+			);
+			path = FavoritesEntity;
+			sourceTree = "<group>";
+		};
 		17ECF94B2ADF1DB000943022 = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +494,7 @@
 				17A808C42B07315800BFF710 /* NavigationModule */,
 				17B151C12AE833780071C305 /* SettingsModule */,
 				ED5610992AE8289000866B6C /* SearchModule */,
+				17C70EC32B146C180045CC24 /* FavoritesModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -498,7 +565,6 @@
 				17C70E852B0F69750045CC24 /* Poppins-Regular.ttf in Resources */,
 				17C70E792B0F69750045CC24 /* Roboto-Thin.ttf in Resources */,
 				17C70E812B0F69750045CC24 /* Poppins-SemiBoldItalic.ttf in Resources */,
-				17ECF9612ADF1DB200943022 /* Assets.xcassets in Resources */,
 				17C70E6E2B0F69750045CC24 /* Inter-SemiBold.ttf in Resources */,
 				17C70E7F2B0F69750045CC24 /* Poppins-Light.ttf in Resources */,
 				17C70E842B0F69750045CC24 /* Poppins-BlackItalic.ttf in Resources */,
@@ -516,6 +582,7 @@
 				17C70E872B0F69750045CC24 /* Poppins-Bold.ttf in Resources */,
 				17C70E682B0F69750045CC24 /* Inter-Thin.ttf in Resources */,
 				17C70E7B2B0F69750045CC24 /* Poppins-ExtraLight.ttf in Resources */,
+				17C70EF02B19A9230045CC24 /* Assets.xcassets in Resources */,
 				17C70E662B0F69750045CC24 /* Inter-Medium.ttf in Resources */,
 				17C70E802B0F69750045CC24 /* Poppins-Medium.ttf in Resources */,
 				17C70E712B0F69750045CC24 /* Roboto-Regular.ttf in Resources */,
@@ -546,14 +613,20 @@
 				ED5AB8E62AF6CAD8002129B9 /* SearchBar.swift in Sources */,
 				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
 				ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */,
+				17C70EEC2B19A2800045CC24 /* FavoritesViewProtocols.swift in Sources */,
 				ED5AF5292B0C08FC00642224 /* UIStackView+ext.swift in Sources */,
 				ED4229F22AFDA18300083244 /* SearchViewPresenter.swift in Sources */,
 				ED4229F62AFDA41900083244 /* SearchViewInteractor.swift in Sources */,
+				17C70EEA2B15F76B0045CC24 /* Restaurant.swift in Sources */,
+				17C70ED12B1520150045CC24 /* FavoritesAssembly.swift in Sources */,
 				ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */,
 				ED4229F02AFD9EDF00083244 /* SearchViewProtocols.swift in Sources */,
 				ED4229F82AFDA42500083244 /* SearchViewInteractorProtocols.swift in Sources */,
+				17C70EEE2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift in Sources */,
 				17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */,
 				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
+				17C70EE72B15BA3A0045CC24 /* FavoritesInteractor.swift in Sources */,
+				17C70EDD2B1524A10045CC24 /* FavoritesView.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
 				ED5AF52B2B0C093C00642224 /* UIFont+ext.swift in Sources */,
@@ -565,10 +638,13 @@
 				17B151CB2AE845160071C305 /* SettingsButton.swift in Sources */,
 				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
 				173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */,
+				17C70EDF2B1524C20045CC24 /* RestautantCell.swift in Sources */,
 				17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */,
 				17B151CE2AE8DD090071C305 /* SettingsPresenter.swift in Sources */,
 				ED5AF5272B0C08DE00642224 /* Array+ext.swift in Sources */,
 				17B151D42AE926080071C305 /* SettingsInteractor.swift in Sources */,
+				17C70EE12B1524D60045CC24 /* CellIdentifiers.swift in Sources */,
+				17C70EE42B15B80E0045CC24 /* FavoritesPresenter.swift in Sources */,
 				173E77022B05308000ABCE2F /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
