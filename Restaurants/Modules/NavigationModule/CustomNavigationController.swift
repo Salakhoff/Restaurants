@@ -13,6 +13,7 @@ private extension CustomNavigationController {
     func configureNavigationBar() {
         navigationBar.prefersLargeTitles = false
         additionalSafeAreaInsets.top = 29
+        navigationBar.overrideUserInterfaceStyle = .light
         
         let textAttributes = [
             NSAttributedString.Key.font: UIFont.poppinsMedium(fontSize: 30)!,
