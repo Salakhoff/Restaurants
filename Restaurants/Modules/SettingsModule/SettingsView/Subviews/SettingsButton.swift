@@ -34,6 +34,8 @@ private extension SettingsButton {
         
         layer.cornerRadius = 10
         
+        overrideUserInterfaceStyle = .light
+        
         makeButtonShadow()
     }
 }

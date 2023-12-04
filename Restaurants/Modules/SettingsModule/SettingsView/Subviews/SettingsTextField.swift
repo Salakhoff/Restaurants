@@ -33,6 +33,7 @@ final class SettingsTextField: UITextField {
 private extension SettingsTextField {
     func setupAppearance() {
         borderStyle = .roundedRect
+        overrideUserInterfaceStyle = .light
         
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 4)
