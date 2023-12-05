@@ -17,6 +17,7 @@ private extension TabBarConfigurator {
         controller.tabBar.unselectedItemTintColor = .lightGray
         controller.tabBar.backgroundColor = .white
         controller.viewControllers = viewControllers
+        controller.overrideUserInterfaceStyle = .light
         
         if let items = controller.tabBar.items {
             for item in items {
