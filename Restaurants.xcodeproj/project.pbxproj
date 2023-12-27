@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172BA4FB2B22DCE200572A41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BA4FA2B22DCE200572A41 /* DetailView.swift */; };
 		173E77022B05308000ABCE2F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77012B05307F00ABCE2F /* Tabs.swift */; };
 		173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */; };
 		1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */; };
+		178BFA922B2B1F3200E43DD9 /* DetailCellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BFA912B2B1F3200E43DD9 /* DetailCellIdentifier.swift */; };
 		17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A808C72B07FE4400BFF710 /* TabProperty.swift */; };
 		17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B151C32AE8362B0071C305 /* SettingsView.swift */; };
 		17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B151C62AE8383B0071C305 /* SettingsTextField.swift */; };
@@ -70,6 +72,11 @@
 		17C996C32AEEE36500149D2C /* SettingsCurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C22AEEE36500149D2C /* SettingsCurrencyPickerView.swift */; };
 		17C996C52AEEE36A00149D2C /* SettingsLanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C42AEEE36A00149D2C /* SettingsLanguagePickerView.swift */; };
 		17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C996C62AEEE3C400149D2C /* SettingsInteractorProtocol.swift */; };
+		17E2C87D2B2ADE67006F22F2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C87C2B2ADE67006F22F2 /* PhotoCell.swift */; };
+		17E2C87F2B2ADE6D006F22F2 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C87E2B2ADE6D006F22F2 /* InfoCell.swift */; };
+		17E2C8812B2ADE72006F22F2 /* ContactButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C8802B2ADE72006F22F2 /* ContactButtonsCell.swift */; };
+		17E2C8832B2ADE78006F22F2 /* ReviewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C8822B2ADE78006F22F2 /* ReviewsCell.swift */; };
+		17E2C8852B2AEA6A006F22F2 /* FavoriteButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C8842B2AEA6A006F22F2 /* FavoriteButtonCell.swift */; };
 		17ECF9582ADF1DB000943022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ECF9572ADF1DB000943022 /* AppDelegate.swift */; };
 		17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ECF9592ADF1DB000943022 /* SceneDelegate.swift */; };
 		17ECF9642ADF1DB200943022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ECF9622ADF1DB200943022 /* LaunchScreen.storyboard */; };
@@ -88,9 +95,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172BA4FA2B22DCE200572A41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		173E77012B05307F00ABCE2F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
 		1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		178BFA912B2B1F3200E43DD9 /* DetailCellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellIdentifier.swift; sourceTree = "<group>"; };
 		17A808C72B07FE4400BFF710 /* TabProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabProperty.swift; sourceTree = "<group>"; };
 		17B151C32AE8362B0071C305 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		17B151C62AE8383B0071C305 /* SettingsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTextField.swift; sourceTree = "<group>"; };
@@ -151,6 +160,11 @@
 		17C996C22AEEE36500149D2C /* SettingsCurrencyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCurrencyPickerView.swift; sourceTree = "<group>"; };
 		17C996C42AEEE36A00149D2C /* SettingsLanguagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLanguagePickerView.swift; sourceTree = "<group>"; };
 		17C996C62AEEE3C400149D2C /* SettingsInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		17E2C87C2B2ADE67006F22F2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		17E2C87E2B2ADE6D006F22F2 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		17E2C8802B2ADE72006F22F2 /* ContactButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactButtonsCell.swift; sourceTree = "<group>"; };
+		17E2C8822B2ADE78006F22F2 /* ReviewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCell.swift; sourceTree = "<group>"; };
+		17E2C8842B2AEA6A006F22F2 /* FavoriteButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonCell.swift; sourceTree = "<group>"; };
 		17ECF9542ADF1DB000943022 /* Restaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ECF9572ADF1DB000943022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17ECF9592ADF1DB000943022 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +195,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172BA4F42B22DAFF00572A41 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				172BA4F52B22DBB400572A41 /* DetailView */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		172BA4F52B22DBB400572A41 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				172BA4FA2B22DCE200572A41 /* DetailView.swift */,
+				178BFA912B2B1F3200E43DD9 /* DetailCellIdentifier.swift */,
+				17E2C87B2B2ADE51006F22F2 /* DetailCells */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		174F9F162B02A19800C945C0 /* TabBarModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +424,18 @@
 			path = FavoritesEntity;
 			sourceTree = "<group>";
 		};
+		17E2C87B2B2ADE51006F22F2 /* DetailCells */ = {
+			isa = PBXGroup;
+			children = (
+				17E2C87C2B2ADE67006F22F2 /* PhotoCell.swift */,
+				17E2C87E2B2ADE6D006F22F2 /* InfoCell.swift */,
+				17E2C8802B2ADE72006F22F2 /* ContactButtonsCell.swift */,
+				17E2C8842B2AEA6A006F22F2 /* FavoriteButtonCell.swift */,
+				17E2C8822B2ADE78006F22F2 /* ReviewsCell.swift */,
+			);
+			path = DetailCells;
+			sourceTree = "<group>";
+		};
 		17ECF94B2ADF1DB000943022 = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +534,7 @@
 		ED5AF52C2B0C0B7200642224 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				172BA4F42B22DAFF00572A41 /* DetailModule */,
 				174F9F162B02A19800C945C0 /* TabBarModule */,
 				17A808C42B07315800BFF710 /* NavigationModule */,
 				17B151C12AE833780071C305 /* SettingsModule */,
@@ -527,7 +572,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					17ECF9532ADF1DB000943022 = {
 						CreatedOnToolsVersion = 15.0;
@@ -615,31 +660,37 @@
 				ED4229EE2AFC335D00083244 /* SearchViewAssembly.swift in Sources */,
 				17C70EEC2B19A2800045CC24 /* FavoritesViewProtocols.swift in Sources */,
 				ED5AF5292B0C08FC00642224 /* UIStackView+ext.swift in Sources */,
+				178BFA922B2B1F3200E43DD9 /* DetailCellIdentifier.swift in Sources */,
 				ED4229F22AFDA18300083244 /* SearchViewPresenter.swift in Sources */,
 				ED4229F62AFDA41900083244 /* SearchViewInteractor.swift in Sources */,
 				17C70EEA2B15F76B0045CC24 /* Restaurant.swift in Sources */,
 				17C70ED12B1520150045CC24 /* FavoritesAssembly.swift in Sources */,
 				ED4529C72AF15DCF00B4263A /* TopLabelView.swift in Sources */,
 				ED4229F02AFD9EDF00083244 /* SearchViewProtocols.swift in Sources */,
+				17E2C8832B2ADE78006F22F2 /* ReviewsCell.swift in Sources */,
 				ED4229F82AFDA42500083244 /* SearchViewInteractorProtocols.swift in Sources */,
 				17C70EEE2B19A31A0045CC24 /* FavoritesInteractorProtocols.swift in Sources */,
 				17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */,
+				17E2C8812B2ADE72006F22F2 /* ContactButtonsCell.swift in Sources */,
 				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
 				17C70EE72B15BA3A0045CC24 /* FavoritesInteractor.swift in Sources */,
 				17C70EDD2B1524A10045CC24 /* FavoritesView.swift in Sources */,
+				17E2C87D2B2ADE67006F22F2 /* PhotoCell.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
 				ED5AF52B2B0C093C00642224 /* UIFont+ext.swift in Sources */,
+				17E2C8852B2AEA6A006F22F2 /* FavoriteButtonCell.swift in Sources */,
 				ED5AF5252B0C08C900642224 /* UIView+ext.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
 				17C996C32AEEE36500149D2C /* SettingsCurrencyPickerView.swift in Sources */,
 				17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */,
 				17C996C52AEEE36A00149D2C /* SettingsLanguagePickerView.swift in Sources */,
 				17B151CB2AE845160071C305 /* SettingsButton.swift in Sources */,
-				17ECF95A2ADF1DB000943022 /* SceneDelegate.swift in Sources */,
+				17E2C87F2B2ADE6D006F22F2 /* InfoCell.swift in Sources */,
 				173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */,
 				17C70EDF2B1524C20045CC24 /* RestautantCell.swift in Sources */,
 				17C996C72AEEE3C400149D2C /* SettingsInteractorProtocol.swift in Sources */,
+				172BA4FB2B22DCE200572A41 /* DetailView.swift in Sources */,
 				17B151CE2AE8DD090071C305 /* SettingsPresenter.swift in Sources */,
 				ED5AF5272B0C08DE00642224 /* Array+ext.swift in Sources */,
 				17B151D42AE926080071C305 /* SettingsInteractor.swift in Sources */,
