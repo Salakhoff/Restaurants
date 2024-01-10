@@ -10,6 +10,9 @@
 		172BA4FB2B22DCE200572A41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BA4FA2B22DCE200572A41 /* DetailView.swift */; };
 		173E77022B05308000ABCE2F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77012B05307F00ABCE2F /* Tabs.swift */; };
 		173E77042B0534BB00ABCE2F /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */; };
+		175324BF2B4D1C45002870BD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175324BE2B4D1C45002870BD /* NetworkError.swift */; };
+		175324C12B4D1C6A002870BD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175324C02B4D1C6A002870BD /* HTTPMethod.swift */; };
+		175324C32B4D1C7E002870BD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175324C22B4D1C7E002870BD /* NetworkService.swift */; };
 		1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */; };
 		178BFA922B2B1F3200E43DD9 /* DetailCellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178BFA912B2B1F3200E43DD9 /* DetailCellIdentifier.swift */; };
 		17A808C82B07FE4400BFF710 /* TabProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A808C72B07FE4400BFF710 /* TabProperty.swift */; };
@@ -98,6 +101,9 @@
 		172BA4FA2B22DCE200572A41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		173E77012B05307F00ABCE2F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		173E77032B0534BB00ABCE2F /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		175324BE2B4D1C45002870BD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		175324C02B4D1C6A002870BD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		175324C22B4D1C7E002870BD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1772D7AB2B0BF35E00E8F939 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		178BFA912B2B1F3200E43DD9 /* DetailCellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellIdentifier.swift; sourceTree = "<group>"; };
 		17A808C72B07FE4400BFF710 /* TabProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabProperty.swift; sourceTree = "<group>"; };
@@ -247,6 +253,24 @@
 				17ECF9652ADF1DB200943022 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		175324BC2B4D1C2E002870BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				175324BD2B4D1C34002870BD /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		175324BD2B4D1C34002870BD /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				175324BE2B4D1C45002870BD /* NetworkError.swift */,
+				175324C02B4D1C6A002870BD /* HTTPMethod.swift */,
+				175324C22B4D1C7E002870BD /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		17A808C42B07315800BFF710 /* NavigationModule */ = {
@@ -455,6 +479,7 @@
 		17ECF9562ADF1DB000943022 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				175324BC2B4D1C2E002870BD /* Services */,
 				1752F2F32AE710720072A114 /* Application */,
 				ED5AF52C2B0C0B7200642224 /* Modules */,
 				ED5AF5232B0C08AC00642224 /* Extensions */,
@@ -675,12 +700,15 @@
 				1772D7AC2B0BF35E00E8F939 /* CustomNavigationController.swift in Sources */,
 				17C70EE72B15BA3A0045CC24 /* FavoritesInteractor.swift in Sources */,
 				17C70EDD2B1524A10045CC24 /* FavoritesView.swift in Sources */,
+				175324C32B4D1C7E002870BD /* NetworkService.swift in Sources */,
 				17E2C87D2B2ADE67006F22F2 /* PhotoCell.swift in Sources */,
 				17B151C72AE8383B0071C305 /* SettingsTextField.swift in Sources */,
 				17C996C12AEEE34900149D2C /* SettingsViewProtocol.swift in Sources */,
+				175324BF2B4D1C45002870BD /* NetworkError.swift in Sources */,
 				ED5AF52B2B0C093C00642224 /* UIFont+ext.swift in Sources */,
 				17E2C8852B2AEA6A006F22F2 /* FavoriteButtonCell.swift in Sources */,
 				ED5AF5252B0C08C900642224 /* UIView+ext.swift in Sources */,
+				175324C12B4D1C6A002870BD /* HTTPMethod.swift in Sources */,
 				17B151D62AE928670071C305 /* SettingsAssembly.swift in Sources */,
 				17C996C32AEEE36500149D2C /* SettingsCurrencyPickerView.swift in Sources */,
 				17B151C42AE8362B0071C305 /* SettingsView.swift in Sources */,
